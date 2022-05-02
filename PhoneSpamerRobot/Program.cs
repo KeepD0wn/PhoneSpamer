@@ -31,14 +31,18 @@ namespace PhoneSpamerRobot
             ISite cian = new Cian();
             ISite rivGosh = new RivGosh();
             ISite newtel = new NewTel();
+            ISite fixprice = new FixPrice();
+            ISite snowQueen = new SnowQueen();
+            ISite detMir = new DetMir();
 
             List<ISite> sites = new List<ISite>();
             sites.Add(dns);
-            // sites.Add(labirint);
             sites.Add(burgerKing);
-            // sites.Add(cian);
             sites.Add(rivGosh);
             //sites.Add(newtel);
+            sites.Add(fixprice);
+            sites.Add(snowQueen);
+            sites.Add(detMir);
 
             for (int i = 0; i < 10000; i++)
             {
