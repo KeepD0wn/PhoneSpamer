@@ -1,0 +1,268 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\ComboSpamer\\ComboSpamer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\ComboSpamer\\ComboSpamer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\ComboSpamer\\ComboSpamer.csproj",
+        "projectName": "ComboSpamer",
+        "projectPath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\ComboSpamer\\ComboSpamer.csproj",
+        "packagesPath": "C:\\Users\\gvozd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\ComboSpamer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gvozd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamerRobot\\PhoneSpamerRobot.csproj": {
+                "projectPath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamerRobot\\PhoneSpamerRobot.csproj"
+              },
+              "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamer\\PhoneSpamer.csproj": {
+                "projectPath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamer\\PhoneSpamer.csproj"
+              },
+              "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\SmsSpamer\\SmsSpamer.csproj": {
+                "projectPath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\SmsSpamer\\SmsSpamer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamerRobot\\PhoneSpamerRobot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamerRobot\\PhoneSpamerRobot.csproj",
+        "projectName": "PhoneSpamerRobot",
+        "projectPath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamerRobot\\PhoneSpamerRobot.csproj",
+        "packagesPath": "C:\\Users\\gvozd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamerRobot\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gvozd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamer\\PhoneSpamer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamer\\PhoneSpamer.csproj",
+        "projectName": "PhoneSpamer",
+        "projectPath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamer\\PhoneSpamer.csproj",
+        "packagesPath": "C:\\Users\\gvozd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\PhoneSpamer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gvozd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\SmsSpamer\\SmsSpamer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\SmsSpamer\\SmsSpamer.csproj",
+        "projectName": "SmsSpamer",
+        "projectPath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\SmsSpamer\\SmsSpamer.csproj",
+        "packagesPath": "C:\\Users\\gvozd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\SmsSpamer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gvozd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "0+dLR3fK7VMvZF8d1j56E8o7bsJI9dLz94Xu2/Ig8wyFPeiKnSeZvSsmT4B+/oIDfkkvRECKohTueRRpC8uqTw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\SmsSpamer\\SmsSpamer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gvozd\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\gvozd\\.nuget\\packages\\selenium.webdriver\\4.1.0\\selenium.webdriver.4.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
