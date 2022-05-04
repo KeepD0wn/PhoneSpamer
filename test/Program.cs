@@ -1,46 +1,83 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Interactions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
+﻿using System;
+using System.IO;
+using System.Net.Http;
+using System.Drawing;
+using System.Net;
 using System.Threading.Tasks;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System.Threading;
+using OpenQA.Selenium.Chrome.ChromeDriverExtensions;
 
 namespace test
 {
     class Program
     {
-        static void Main(string[] args)
+        public static byte[] ImageToByteArray(Image imageIn)
         {
-            IWebDriver browser = new ChromeDriver(@"C:\Users\gvozd\Desktop");
+            using (var ms = new MemoryStream())
+            {
+                imageIn.Save(ms, imageIn.RawFormat);
+                return ms.ToArray();
+            }
+        }
 
-            browser.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(1000);
-            browser.Navigate().GoToUrl("https://www.citilink.ru/");
-            browser.Manage().Window.Maximize();
+        public static async Task<int> Main(string[] args)
+        {
+            var options = new ChromeOptions();
+            options.AddHttpProxy("176.103.80.227", 55603, "mRDEYNEP", "idy14sDR");
+            var browser = new ChromeDriver(@"C:\Users\gvozd\Desktop", options);
+            browser.Navigate().GoToUrl("https://2ip.ru/");
 
-            ((IJavaScriptExecutor)browser).ExecuteScript("window.open();");
+            
 
-            //DriverManager.Driver.FindElement(By.CssSelector("body")).SendKeys(Keys.Control + "t");
-            browser.SwitchTo().Window(browser.WindowHandles.Last());
+            string src = browser.FindElement(By.XPath("/html/body/div[3]/table/tbody/tr[6]/td/img[3]")).GetAttribute("src");
 
-            browser.Navigate().GoToUrl("https://yandex.ru/pogoda/vladimir");
-            browser.Manage().Window.Maximize();
+            WebClient downloader = new WebClient();
+            downloader.DownloadFile(src, @"C:\Users\gvozd\Desktop\testImg.jpg");
 
-            //Actions newTab = new Actions(driver);
-            //newTab
-            //    .KeyDown(OpenQA.Selenium.Keys.Control)
-            //    .KeyDown(OpenQA.Selenium.Keys.Shift)
-            //    .Click(element).KeyUp(OpenQA.Selenium.Keys.Control).KeyUp(OpenQA.Selenium.Keys.Shift)
-            //    .Build()
-            //    .Perform();
+            Image newImage = Image.FromFile(@"C:\Users\gvozd\Desktop\testImg.jpg");
+            byte[] imgByte = ImageToByteArray(newImage);
 
-            //если всего будет две вкладки, то перейти на новую можно так:
-            //  driver.SwitchTo().Window(driver.WindowHandles.Last());
 
+            HttpClient httpClient = new HttpClient();
+            MultipartFormDataContent form = new MultipartFormDataContent();
+
+            form.Add(new StringContent("5d21125ba1f7c6ecc2f3d2a3f488da6a"), "key");
+            form.Add(new ByteArrayContent(imgByte), "file", "captcha.jpg");
+            HttpResponseMessage response = await httpClient.PostAsync("http://rucaptcha.com/in.php", form);
+
+            response.EnsureSuccessStatusCode();
+            httpClient.Dispose();
+            string answer = response.Content.ReadAsStringAsync().Result;
+
+            string captchaId = "";
+            if (answer.Contains("OK"))
+            {
+                captchaId = answer.Remove(0, 3);
+            }
+
+            string answer1 = "";
+            if (captchaId != "")
+            {
+                do
+                {
+                    Thread.Sleep(5000);
+                    WebRequest reqGET1 = WebRequest.Create("http://rucaptcha.com/res.php?key=5d21125ba1f7c6ecc2f3d2a3f488da6a&action=get&id="+ captchaId);
+                    WebResponse resp1 = reqGET1.GetResponse();
+                    Stream stream1 = resp1.GetResponseStream();
+                    StreamReader sr1 = new StreamReader(stream1);
+                    answer1 = sr1.ReadToEnd();
+                }
+                while (answer1 == "CAPCHA_NOT_READY");
+            }
+
+
+            string answerCodeToken = answer1.Split('|', StringSplitOptions.RemoveEmptyEntries)[1];
+            Console.WriteLine(answerCodeToken);
 
             Console.ReadLine();
+            return 2;
         }
     }
 }

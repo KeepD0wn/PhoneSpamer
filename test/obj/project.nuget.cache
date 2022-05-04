@@ -1,11 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "X48wCrE13xMu2cUegWcWKEbeveYQOAuGtg+eh4A9KN4VzpQRYcVhF2XmMJrhStub1dfWZ+WpzYwKemcjk5LXUQ==",
+  "dgSpecHash": "RBfd/RnfOwVoGCnAkC3jfzFOd//7a9q+AzhyFZmRxS9FXT5xN92Fc5u8z725q3wFZKc9wtTu+8GtYXCK5djBGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\test\\test.csproj",
+  "projectFilePath": "C:\\Users\\gvozd\\source\\repos\\PhoneSpamer\\test\\TextCaptchaProxy.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gvozd\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\gvozd\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\gvozd\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\gvozd\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\gvozd\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\gvozd\\.nuget\\packages\\selenium.webdriver\\4.1.0\\selenium.webdriver.4.1.0.nupkg.sha512"
+    "C:\\Users\\gvozd\\.nuget\\packages\\openqa.selenium.chrome.chromedriverextensions\\1.2.0\\openqa.selenium.chrome.chromedriverextensions.1.2.0.nupkg.sha512",
+    "C:\\Users\\gvozd\\.nuget\\packages\\selenium.webdriver\\4.1.1\\selenium.webdriver.4.1.1.nupkg.sha512",
+    "C:\\Users\\gvozd\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\gvozd\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\gvozd\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+    "C:\\Users\\gvozd\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

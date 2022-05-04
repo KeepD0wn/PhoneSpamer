@@ -39,10 +39,10 @@ namespace PhoneSpamerRobot
             sites.Add(dns);
             sites.Add(burgerKing);
             sites.Add(rivGosh);
-            //sites.Add(newtel);
+            //sites.Add(newtel); //не даёт регистрацию
             sites.Add(fixprice);
             sites.Add(snowQueen);
-            sites.Add(detMir);
+            sites.Add(detMir); // надо научится решать v2 invsible
 
             for (int i = 0; i < 10000; i++)
             {

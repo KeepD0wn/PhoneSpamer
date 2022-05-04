@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneSpamer", "PhoneSpamer\PhoneSpamer.csproj", "{8D707CDD-472C-40D2-9299-2CC101E9388B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test", "test\test.csproj", "{EADBFAF4-7E2B-4B35-AD3F-4C0F1D1DF731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextCaptchaProxy", "test\TextCaptchaProxy.csproj", "{EADBFAF4-7E2B-4B35-AD3F-4C0F1D1DF731}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmsSpamer", "SmsSpamer\SmsSpamer.csproj", "{44F0411B-038D-4941-946A-BA53A7DAAECE}"
 EndProject
