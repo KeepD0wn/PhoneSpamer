@@ -16,4 +16,3 @@ C:\Users\gvozd\source\repos\PhoneSpamer\SmsSpamer\obj\Debug\net5.0\SmsSpamer.dll
 C:\Users\gvozd\source\repos\PhoneSpamer\SmsSpamer\obj\Debug\net5.0\ref\SmsSpamer.dll
 C:\Users\gvozd\source\repos\PhoneSpamer\SmsSpamer\obj\Debug\net5.0\SmsSpamer.pdb
 C:\Users\gvozd\source\repos\PhoneSpamer\SmsSpamer\obj\Debug\net5.0\SmsSpamer.genruntimeconfig.cache
-C:\Users\gvozd\source\repos\PhoneSpamer\SmsSpamer\obj\Debug\net5.0\SmsSpamer.csproj.AssemblyReference.cache

@@ -18,4 +18,3 @@ C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamerRobot\obj\Debug\net5.0\PhoneS
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamerRobot\obj\Debug\net5.0\PhoneSpamerRobot.genruntimeconfig.cache
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamerRobot\obj\Debug\net5.0\PhoneSpamerRobot.Properties.Resources.resources
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamerRobot\obj\Debug\net5.0\PhoneSpamerRobot.csproj.GenerateResource.cache
-C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamerRobot\obj\Debug\net5.0\PhoneSpamerRobot.csproj.AssemblyReference.cache

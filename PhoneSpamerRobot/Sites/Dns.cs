@@ -20,14 +20,20 @@ namespace PhoneSpamerRobot.Sites
             ISite.browser.Manage().Window.Maximize();
 
             try
-            {
-                IWebElement btn = ISite.browser.FindElement(By.XPath("//*[@id='header-search']/div/div[1]/div[3]/button"));
+            {   
+                Actions action = new Actions(ISite.browser);
+                IWebElement elem = ISite.browser.FindElement(By.XPath("html/body/header/nav/div/div[1]/div[3]"));
+                action.MoveToElement(elem);
+                action.Perform();
+                Thread.Sleep(500);
+
+                IWebElement btn = ISite.browser.FindElement(By.XPath("/html/body/header/nav/div/div[1]/div[3]/div/div/div[3]/div[2]/div/div[1]/button"));
                 btn.Click();
                 Thread.Sleep(1000);
 
-                ISite.browser.FindElement(By.XPath("/html/body/header/div[1]/div[2]/div/div/div/div[2]/div/input")).SendKeys(ISite.PhoneNumberWithout7);
+                ISite.browser.FindElement(By.XPath("/html/body/header/nav/div/div[1]/div[3]/div/div[1]/div[2]/modal/div/div/div/div[2]/div/input")).SendKeys(ISite.PhoneNumberWithout7);
 
-                IWebElement btnSend = ISite.browser.FindElement(By.XPath("/html/body/header/div[1]/div[2]/div/div/div/div[3]/div/div"));
+                IWebElement btnSend = ISite.browser.FindElement(By.XPath("/html/body/header/nav/div/div[1]/div[3]/div/div[1]/div[2]/modal/div/div/div/div[3]/div/div"));
                 btnSend.Click();
 
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -47,7 +53,7 @@ namespace PhoneSpamerRobot.Sites
             string src = null;
             try
             {
-                src = ISite.browser.FindElement(By.XPath("/html/body/header/div[1]/div[2]/div/div/div/div[4]/div[2]/div/div/iframe")).GetAttribute("src");
+                src = ISite.browser.FindElement(By.XPath("/html/body/header/nav/div/div[1]/div[3]/div/div[1]/div[2]/modal/div/div/div/div[4]/div[2]/div/div/iframe")).GetAttribute("src");
             }
             catch { }
 
