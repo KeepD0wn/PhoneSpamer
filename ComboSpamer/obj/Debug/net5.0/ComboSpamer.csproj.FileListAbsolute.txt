@@ -3,7 +3,6 @@ C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\bin\Debug\net5.0\ComboSpamer
 C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\bin\Debug\net5.0\ComboSpamer.runtimeconfig.json
 C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\bin\Debug\net5.0\ComboSpamer.runtimeconfig.dev.json
 C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\bin\Debug\net5.0\ComboSpamer.dll
-C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\bin\Debug\net5.0\ref\ComboSpamer.dll
 C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\bin\Debug\net5.0\ComboSpamer.pdb
 C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\obj\Debug\net5.0\ComboSpamer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\obj\Debug\net5.0\ComboSpamer.AssemblyInfoInputs.cache
@@ -35,3 +34,4 @@ C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\bin\Debug\net5.0\PhoneSpamer
 C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\bin\Debug\net5.0\PhoneSpamer.exe
 C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\bin\Debug\net5.0\PhoneSpamer.dll
 C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\bin\Debug\net5.0\PhoneSpamer.pdb
+C:\Users\gvozd\source\repos\PhoneSpamer\ComboSpamer\obj\Debug\net5.0\refint\ComboSpamer.dll

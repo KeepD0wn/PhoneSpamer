@@ -38,11 +38,11 @@ namespace PhoneSpamerRobot
             List<ISite> sites = new List<ISite>();
             sites.Add(dns);
             sites.Add(burgerKing);
-            sites.Add(rivGosh);
-            sites.Add(newtel); //не даёт регистрацию
+           // sites.Add(rivGosh); // смс приходит
+            //sites.Add(newtel); //не даёт регистрацию
             sites.Add(fixprice);
             sites.Add(snowQueen);
-            sites.Add(detMir); // надо научится решать v2 invsible
+            //sites.Add(detMir); // надо научится решать v2 invsible
 
             for (int i = 0; i < 10000; i++)
             {

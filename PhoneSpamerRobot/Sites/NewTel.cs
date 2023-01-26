@@ -35,11 +35,11 @@ namespace PhoneSpamerRobot.Sites
 
                
                 ISite.browser.FindElement(By.XPath("//*[@id='newtel-register-form']/div[3]/input")).SendKeys(ISite.Name);
-                ISite.browser.FindElement(By.XPath("/html/body/div[29]/form/div[4]/input")).SendKeys(ISite.mail);
-                ISite.browser.FindElement(By.XPath("/html/body/div[29]/form/div[5]/input")).SendKeys(ISite.PhoneNumberWithout7);
+                ISite.browser.FindElement(By.XPath("//*[@id=\"newtel-register-form\"]/div[4]/input")).SendKeys(ISite.mail);
+                ISite.browser.FindElement(By.XPath("//*[@id=\"newtel-register-form\"]/div[5]/input")).SendKeys(ISite.PhoneNumberWithout7);
                 Thread.Sleep(1000);
 
-                IWebElement btn1 = ISite.browser.FindElement(By.XPath("/html/body/div[29]/form/p[3]/button[1]"));
+                IWebElement btn1 = ISite.browser.FindElement(By.XPath("//*[@id=\"newtel-register-form\"]/p[3]/button[1]"));
                 btn1.Click();
 
                 Console.ForegroundColor = ConsoleColor.Green;

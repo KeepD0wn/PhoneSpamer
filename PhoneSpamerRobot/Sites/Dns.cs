@@ -18,22 +18,24 @@ namespace PhoneSpamerRobot.Sites
         {
             ISite.browser.Navigate().GoToUrl("https://www.dns-shop.ru/");
             ISite.browser.Manage().Window.Maximize();
+            Thread.Sleep(500);
 
             try
             {   
                 Actions action = new Actions(ISite.browser);
-                IWebElement elem = ISite.browser.FindElement(By.XPath("html/body/header/nav/div/div[1]/div[3]"));
+                IWebElement elem = ISite.browser.FindElement(By.XPath("//*[@id=\"header-search\"]/div/div[3]/div[2]/div"));
                 action.MoveToElement(elem);
                 action.Perform();
                 Thread.Sleep(500);
 
-                IWebElement btn = ISite.browser.FindElement(By.XPath("/html/body/header/nav/div/div[1]/div[3]/div/div/div[3]/div[2]/div/div[1]/button"));
+                IWebElement btn = ISite.browser.FindElement(By.XPath("//*[@id=\"header-search\"]/div/div[3]/div[2]/div/div[3]/div[2]/div/div[1]/button"));
+                Thread.Sleep(500);
                 btn.Click();
                 Thread.Sleep(1000);
 
-                ISite.browser.FindElement(By.XPath("/html/body/header/nav/div/div[1]/div[3]/div/div[1]/div[2]/modal/div/div/div/div[2]/div/input")).SendKeys(ISite.PhoneNumberWithout7);
+                ISite.browser.FindElement(By.XPath("/html/body/div/div/header/div[2]/div/div/div/div/div/div[2]/div/input")).SendKeys(ISite.PhoneNumberWithout7);
 
-                IWebElement btnSend = ISite.browser.FindElement(By.XPath("/html/body/header/nav/div/div[1]/div[3]/div/div[1]/div[2]/modal/div/div/div/div[3]/div/div"));
+                IWebElement btnSend = ISite.browser.FindElement(By.XPath("//*[@id=\"modals\"]/div/div/div/div/div/div[3]/div/button"));
                 btnSend.Click();
 
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -53,7 +55,7 @@ namespace PhoneSpamerRobot.Sites
             string src = null;
             try
             {
-                src = ISite.browser.FindElement(By.XPath("/html/body/header/nav/div/div[1]/div[3]/div/div[1]/div[2]/modal/div/div/div/div[4]/div[2]/div/div/iframe")).GetAttribute("src");
+                src = ISite.browser.FindElement(By.XPath("/html/body/div[1]/div/header/div[2]/div/div/div/div/div/div[4]/div[2]/div/div/iframe")).GetAttribute("src");
             }
             catch { }
 

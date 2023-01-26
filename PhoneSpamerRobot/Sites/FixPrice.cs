@@ -14,15 +14,21 @@ namespace PhoneSpamerRobot.Sites
     {
         public void SpamSite()
         {
-            ISite.browser.Navigate().GoToUrl("https://fix-price.ru/auth/register.php");
+            ISite.browser.Navigate().GoToUrl("https://fix-price.com/");
             ISite.browser.Manage().Window.Maximize();
 
             try
             {
-                ISite.browser.FindElement(By.XPath("/html/body/div[4]/main/div[3]/div/div/div[4]/form/fieldset[2]/div/div/div[2]/input[1]")).SendKeys(ISite.PhoneNumberWithout7);
-                Thread.Sleep(1000);
+                IWebElement btn9 = ISite.browser.FindElement(By.XPath("//*[@id=\"app-header\"]/header/div/div[2]/div[4]/button/span"));
+                btn9.Click();
+
+                IWebElement btn8 = ISite.browser.FindElement(By.XPath("//*[@id=\"modal\"]/div/div/button[3]"));
+                btn8.Click();
+
+                ISite.browser.FindElement(By.XPath("//*[@id=\"modal\"]/div/div/div/div[1]/div/input")).SendKeys(ISite.PhoneNumberWithout7);
+                Thread.Sleep(500);
                
-                IWebElement btn = ISite.browser.FindElement(By.XPath("/html/body/div[4]/main/div[3]/div/div/div[4]/form/fieldset[2]/div/div/div[2]/span"));
+                IWebElement btn = ISite.browser.FindElement(By.XPath("//*[@id=\"modal\"]/div/div/div/button"));
                 btn.Click();
 
                 Console.ForegroundColor = ConsoleColor.Green;

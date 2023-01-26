@@ -24,8 +24,10 @@ namespace PhoneSpamerRobot.Sites
                 Thread.Sleep(1000);
 
                 ISite.browser.FindElement(By.XPath("/html/body/div/div/div/div[3]/div/div[2]/div/label[1]/input")).SendKeys(ISite.PhoneNumberWithout7);
+                Thread.Sleep(5000);
                 IWebElement btn0 = ISite.browser.FindElement(By.XPath("/html/body/div/div/div/div[3]/div/div[2]/div/label[3]/input"));
                 btn0.Click();
+                Thread.Sleep(500);
 
                 IWebElement btnSend = ISite.browser.FindElement(By.XPath("/html/body/div/div/div/div[3]/div/div[2]/div/div[3]"));
                 btnSend.Click();

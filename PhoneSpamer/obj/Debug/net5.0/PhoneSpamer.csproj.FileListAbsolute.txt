@@ -3,7 +3,6 @@ C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\bin\Debug\net5.0\PhoneSpamer
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\bin\Debug\net5.0\PhoneSpamer.runtimeconfig.json
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\bin\Debug\net5.0\PhoneSpamer.runtimeconfig.dev.json
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\bin\Debug\net5.0\PhoneSpamer.dll
-C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\bin\Debug\net5.0\ref\PhoneSpamer.dll
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\bin\Debug\net5.0\PhoneSpamer.pdb
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\bin\Debug\net5.0\WebDriver.dll
@@ -16,3 +15,5 @@ C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\obj\Debug\net5.0\PhoneSpamer
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\obj\Debug\net5.0\ref\PhoneSpamer.dll
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\obj\Debug\net5.0\PhoneSpamer.pdb
 C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\obj\Debug\net5.0\PhoneSpamer.genruntimeconfig.cache
+C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\obj\Debug\net5.0\PhoneSpamer.csproj.AssemblyReference.cache
+C:\Users\gvozd\source\repos\PhoneSpamer\PhoneSpamer\obj\Debug\net5.0\refint\PhoneSpamer.dll
